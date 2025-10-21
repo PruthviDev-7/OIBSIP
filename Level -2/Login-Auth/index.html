@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Authentication</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1 id="title">Register</h1>
+      <form id="authForm">
+        <div class="input-group">
+          <div class="input-field" id="nameField">
+            <input type="text" id="username" placeholder="Username" required>
+          </div>
+          <div class="input-field">
+            <input type="password" id="password" placeholder="Password" required>
+          </div>
+        </div>
+        <div class="btn-field">
+          <button type="submit" id="submitBtn">Register</button>
+          <button type="button" id="toggleBtn">Switch to Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="securePage" class="hidden">
+    <h2>Welcome, <span id="displayUser"></span> 🎉</h2>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

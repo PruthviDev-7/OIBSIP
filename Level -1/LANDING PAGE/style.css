@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  font-family: 'Helvetica Neue', sans-serif;
+  background: #111;
+  color: #eee;
+}
+
+header {
+  background: #000;
+  color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 60px;
+  align-items: center;
+  border-bottom: 1px solid #333;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 2px;
+   color: #c9a227;
+}
+header nav a {
+  color: #eee;
+  margin-left: 30px;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+header nav a:hover {
+  color: #c9a227;
+}
+
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 60px;
+  background: #111;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero-text p {
+  font-size: 18px;
+  color: #ccc;
+  margin-bottom: 30px;
+}
+
+.hero-text button {
+  padding: 12px 30px;
+  background: transparent;
+  border: 2px solid #c9a227;
+  color: #c9a227;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background: #c9a227;
+  color: #111;
+}
+
+.hero-image img {
+  max-width: 420px;
+  border-radius: 8px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  background: #000;
+}
+
+.feature {
+  width: 30%;
+  text-align: center;
+  color: #ccc;
+}
+
+.feature h3 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.products {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px;
+  background: #111;
+}
+
+.product {
+  background: #000;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  width: 28%;
+  border: 1px solid #222;
+  transition: transform 0.3s;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.product h4 {
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.product p {
+  color: #c9a227;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.product button {
+  padding: 10px 20px;
+  background: transparent;
+  border: 1px solid #c9a227;
+  color: #c9a227;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product button:hover {
+  background: #c9a227;
+  color: #111;
+}
+
+footer {
+  background: #000;
+  color: #777;
+  text-align: center;
+  padding: 20px;
+  border-top: 1px solid #333;
+}
+
+footer p {
+  margin: 5px;
+}

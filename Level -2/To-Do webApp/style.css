@@ -1,0 +1,149 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 400px;
+}
+
+h1 {
+  text-align: center;
+  color: #4a47a3;
+  margin-bottom: 20px;
+}
+
+.input-section {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #aaa;
+}
+
+button {
+  background: #4a47a3;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background: #6b66cc;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+}
+
+.counter {
+  background: #4a47a3;
+  color: white;
+  font-size: 12px;
+  padding: 2px 8px;
+  margin-left: 8px;
+  border-radius: 999px;
+}
+
+.task-section {
+  margin-bottom: 25px;
+}
+
+h2 {
+  font-size: 18px;
+  border-bottom: 2px solid #4a47a3;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: #f8f8f8;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.task-item .task-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 240px;
+}
+
+.task-buttons button {
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 6px 9px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-comp { background: #28a745; color: #fff; }
+.btn-comp:hover { background: #2ecc71; }
+.btn-edit { background: #ffc107; color: #222; }
+.btn-edit:hover { background: #ffda5b; }
+.btn-del { background: #e74c3c; color: #fff; }
+.btn-del:hover { background: #ff6b5a; }
+
+.empty {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+.time {
+  font-size: 11px;
+  color: #777;
+}
+
+@media (max-width: 480px) {
+  .container { width: 100%; padding: 18px; border-radius: 12px; }
+  .task-item .task-info { max-width: 160px; }
+}
+
+.task-info {
+  flex: 1;
+}
+
+.task-buttons button {
+  margin-left: 5px;
+  font-size: 12px;
+  padding: 5px 8px;
+}
+
+.time {
+  font-size: 11px;
+  color: #777;
+}
